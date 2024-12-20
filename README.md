@@ -23,3 +23,9 @@ int main() {
     printf("\n");
     return 0;
 }
+
+## Output
+
+![image](https://github.com/user-attachments/assets/5b6552d3-aea3-4fce-882a-de063a8fe4b8)
+
+
