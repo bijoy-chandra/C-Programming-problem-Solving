@@ -94,4 +94,81 @@ void main() {
 ![image](https://github.com/user-attachments/assets/dd85115b-08bf-4bb6-92d4-b816d9d42fa7)
 
 
+### Write a C program to find the largest of three numbers.
+
+#include <stdio.h>
+
+void main() {
+
+	int value1, value2, value3;
+
+	printf("Enter the Value: ");
+	scanf("%d %d %d", &value1, &value2, &value3);
+
+	printf("1st Number: %d\t, 2nd Number: %d\t, 3rd Number %d\t\n", value1, value2, value3);
+
+	if(value1 > value2) {
+        if (value1 > value3) {
+            printf("The 1st Number is the greatest among three\n");
+        }
+        else {
+            printf("The 3rd Number is the greatest among three\n");
+        }
+	}
+	else if (value2 > value3) {
+		printf("The 2nd Number is the greatest among three\n");
+	}
+	else {
+		printf("The 3rd Number is greatest among three\n");
+	}
+}
+
+## Output
+
+![image](https://github.com/user-attachments/assets/963b9551-63ea-4679-8707-79c722f27df8)
+
+
+### Write a C program to determine eligibility for admission to a professional course based on the following criteria:
+- Eligibility Criteria : Marks in Maths >=65 and Marks in Phy >=55 and Marks in Chem>=50 and Total in all three subject >=190 or Total in Maths and Physics >=140
+
+#include <stdio.h>
+
+void main () {
+
+    int math,phy,chem;
+
+    printf("Enter the result of each subjects = ");
+    scanf("%d %d %d", &math, &phy, &chem);
+
+    printf("Math Result: %d\t, Physics Result: %d\t, Chemistry Result: %d\t\n", math, phy, chem);
+
+    int Total_score = math + phy + chem;
+
+    int Math_phy = math + phy;
+
+    printf("Total Score: %d\n", Total_score);
+    printf("Math and physics score: %d\n", Math_phy);
+
+    if (math >= 65 && phy >= 60 && chem >= 55)
+        {
+        if (Total_score >= 190 && Math_phy >= 140) 
+        {
+            printf("The candidate is eligible for admission.");
+        }
+        else {
+            printf("The candidate is not eligible for admission.");
+        }
+    }
+    else {
+        printf("The candidate is not eligible for admission.");
+    }
+
+}
+
+## Output
+
+![image](https://github.com/user-attachments/assets/33be8e55-9a99-4ae4-a49e-b4b9f859d3ef)
+
+
+
 
